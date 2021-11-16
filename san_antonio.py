@@ -15,22 +15,18 @@ characters = [
     "Kirikou"
 ]
 
-user_answer = input('Tapez entrée pour découvrir une autre citation ou B pour quitter le programme.')
-
-while
-
-if user_answer == "B":
-    pass
-else:
-    pass
-    #Montre une autre quote
-
 def get_random_item_in(my_list):
-    # A FAIRE : Donner un nombre aléatoire
-    item = my_list[0]                       #Donne une quote de la liste
-    print(item)                             #Montre une quote dans l'interpréteur
-    return "Programme terminé"              #Retour valeur
+    # Donner un nombre aléatoire
+    item = my_list[0]               #Donne une quote de la liste
+    return item                     #Retour valeur
 
-print(get_random_item_in(quotes))
 
-# Afficher une quote aléatoire
+user_answer = "A"
+
+while user_answer !="B":
+    print(get_random_item_in(quotes))
+    user_answer = "B"
+
+for quote in quotes:
+    quote.capitalize()
+    
